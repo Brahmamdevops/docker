@@ -2,5 +2,5 @@ FROM almalinux:8
 RUN yum install nginx -y
 RUN rm -rf  /usr/share/nginx/html/index.html
 COPY index.html  /usr/share/nginx/html
-ADD https://github.com/daws-76s/notes/blob/master/session-01.txt /tmp/session01
+ADD https://github.com/daws-76s/notes/blob/master/session-01.txt /tmp/session-01
 CMD ["nginx","-g", "daemon off;"]
